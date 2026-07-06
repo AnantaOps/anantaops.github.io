@@ -53,6 +53,8 @@
     --sidebar-accent-foreground: 0 0% 8%;
     --sidebar-border: 0 0% 91%;
     --sidebar-ring: 0 0% 8%;
+
+    --spotlight-rgb: 0, 0, 0;
   }
 
   .dark {
@@ -101,6 +103,8 @@
     --sidebar-accent-foreground: 0 0% 100%;
     --sidebar-border: 0 0% 14%;
     --sidebar-ring: 0 0% 96%;
+
+    --spotlight-rgb: 255, 255, 255;
   }
 }
 
