@@ -157,6 +157,19 @@
   .shadow-glow { box-shadow: var(--shadow-glow); }
 
   .glass { @apply bg-background/60 backdrop-blur-xl border border-border/60; }
+
+  .spotlight {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background: radial-gradient(700px circle at var(--spot-x, 50%) var(--spot-y, 0px), rgba(var(--spotlight-rgb), 0.13), transparent 70%);
+    transition: background 0.2s ease;
+  }
+}
+
+@media (max-width: 767px) {
+  .spotlight { display: none; }
 }
 
 @keyframes fade-up {
