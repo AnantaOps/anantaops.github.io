@@ -9,7 +9,7 @@ const links = [
   { label: "Solutions", href: "#solutions" },
   { label: "Roadmap", href: "#roadmap" },
   { label: "Company", href: "#about" },
-  { label: "Blog", href: "#" },
+  { label: "Blog", href: "https://articles.anantaops.com/" },
   { label: "Contact", href: "#contact" },
 ];
 

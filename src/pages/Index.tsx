@@ -392,7 +392,7 @@ const CTA = () => {
 const footerCols: { title: string; links: [string, string][] }[] = [
   { title: "Products", links: [["InsightOps", "#products"], ["Future Products", "#products"]] },
   { title: "Solutions", links: [["Cloud Engineering", "#solutions"], ["DevOps", "#solutions"], ["AI Engineering", "#solutions"], ["Platform Architecture", "#solutions"]] },
-  { title: "Resources", links: [["Documentation", "#"], ["GitHub", "https://github.com/AnantaOps"], ["Blog", "#"]] },
+  { title: "Resources", links: [["Documentation", "#"], ["GitHub", "https://github.com/AnantaOps"], ["Blog", "https://articles.anantaops.com/"]] },
   { title: "Company", links: [["About", "#about"], ["Roadmap", "#roadmap"], ["Contact", "#contact"], ["LinkedIn", "https://www.linkedin.com/in/ananta-ops-5214223b7/"]] },
 ];
 
