@@ -146,8 +146,16 @@ const Products = () => (
               ))}
             </div>
             <div className="mt-8 flex gap-3">
-              <Button variant="hero" asChild><a href="#contact">Join Beta <ArrowRight className="h-4 w-4" /></a></Button>
-              <Button variant="outline">Learn More</Button>
+              <Button variant="hero" asChild>
+                <a href="https://insightsops.anantaops.com/#cta" target="_blank" rel="noopener noreferrer">
+                  Join Beta <ArrowRight className="h-4 w-4" />
+                </a>
+              </Button>
+              <Button variant="outline" asChild>
+                <a href="https://insightsops.anantaops.com/" target="_blank" rel="noopener noreferrer">
+                  Learn More
+                </a>
+              </Button>
             </div>
           </div>
           <div className="hidden lg:block"><DashboardMock /></div>
