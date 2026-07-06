@@ -73,14 +73,23 @@ const stack = [
 ];
 
 const Trust = () => (
-  <section className="border-y border-border bg-muted/30 py-16">
+  <section id="technologies" className="border-t border-border bg-muted/20 py-24 lg:py-32">
     <div className="container">
-      <p className="text-center text-sm font-medium uppercase tracking-wider text-muted-foreground">
-        Built with modern engineering technologies
-      </p>
-      <div className="mt-8 grid grid-cols-3 gap-x-8 gap-y-6 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-9">
+      <div className="mx-auto max-w-2xl text-center">
+        <p className="text-sm font-medium text-primary">Technologies</p>
+        <h2 className="mt-3 text-4xl font-semibold tracking-tight md:text-5xl">
+          The stack we <span className="text-brand-gradient">build on</span>
+        </h2>
+        <p className="mt-4 text-lg text-muted-foreground">
+          Modern, cloud-native, and AI-first — the tools we use to ship reliable engineering platforms.
+        </p>
+      </div>
+      <div className="mt-14 grid grid-cols-3 gap-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-9">
         {stack.map((s) => (
-          <div key={s} className="flex items-center justify-center text-sm font-medium text-muted-foreground transition-colors hover:text-foreground">
+          <div
+            key={s}
+            className="flex items-center justify-center rounded-lg border border-border bg-card px-3 py-3 text-sm font-medium text-muted-foreground transition-all hover:-translate-y-0.5 hover:border-primary/40 hover:text-foreground"
+          >
             {s}
           </div>
         ))}
@@ -184,9 +193,9 @@ const Solutions = () => (
       <div className="mt-16 grid gap-6 md:grid-cols-2">
         {solutions.map((s) => (
           <div key={s.title} className="group relative overflow-hidden rounded-2xl border border-border bg-card p-8 transition-all duration-300 hover:-translate-y-1 hover:border-primary/40 hover:shadow-elevated">
-            <div className="absolute inset-x-0 top-0 h-px gradient-brand opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-            <div className="flex h-12 w-12 items-center justify-center rounded-xl gradient-brand shadow-glow">
-              <s.icon className="h-6 w-6 text-white" />
+            <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-primary/60 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+            <div className="relative flex h-12 w-12 items-center justify-center rounded-xl border border-border bg-gradient-to-br from-muted to-background shadow-sm transition-all duration-300 group-hover:border-primary/40 group-hover:shadow-elevated">
+              <s.icon className="h-6 w-6 text-foreground" strokeWidth={1.5} />
             </div>
             <h3 className="mt-5 text-xl font-semibold">{s.title}</h3>
             <p className="mt-2 leading-relaxed text-muted-foreground">{s.desc}</p>
@@ -272,8 +281,8 @@ const HowItWorks = () => (
 );
 
 const roadmap = [
-  { year: "2025", label: "Now", items: ["Cloud Engineering","DevOps","Infrastructure Consulting","InsightOps Beta"] },
-  { year: "2026", label: "Next", items: ["InsightOps GA","AnantaDeploy","AnantaObserve","Engineering AI Agents"] },
+  { year: "2026", label: "Now", items: ["Cloud Engineering","DevOps","Infrastructure Consulting","InsightOps Beta"] },
+  { year: "2027", label: "Next", items: ["InsightOps GA","AnantaDeploy","AnantaObserve","Engineering AI Agents"] },
   { year: "Future", label: "Vision", items: ["Complete AI Engineering Platform","Autonomous Operations","Enterprise Platform"] },
 ];
 
@@ -311,17 +320,39 @@ const Roadmap = () => (
 const About = () => (
   <section id="about" className="border-t border-border bg-muted/20 py-24 lg:py-32">
     <div className="container">
-      <div className="mx-auto max-w-3xl text-center">
-        <p className="text-sm font-medium text-primary">About</p>
-        <h2 className="mt-3 text-4xl font-semibold tracking-tight md:text-5xl">
-          Software engineering, made <span className="text-brand-gradient">intelligent</span>
-        </h2>
-        <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-          We believe software engineering should become simpler, more intelligent, and more automated. Our mission is to build AI-native platforms that empower engineering teams to focus on innovation instead of repetitive operational work.
-        </p>
-        <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
-          <span className="text-foreground">Ananta</span> means <em>infinite</em>. We're building for infinite engineering possibilities.
-        </p>
+      <div className="grid gap-12 lg:grid-cols-2 lg:items-center lg:gap-16">
+        <div>
+          <p className="text-sm font-medium text-primary">About</p>
+          <h2 className="mt-3 text-4xl font-semibold tracking-tight md:text-5xl">
+            Software engineering, made <span className="text-brand-gradient">intelligent</span>
+          </h2>
+          <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
+            AnantaOps is an AI-native engineering company building the tools and platforms that modern software teams need to move faster with confidence. We combine deep cloud-native expertise with applied AI to remove operational friction from the way engineers work.
+          </p>
+          <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
+            Our products investigate incidents, reason across systems, and automate the repetitive work that slows teams down — while our engineering services help organizations architect, ship, and scale production platforms.
+          </p>
+          <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
+            We're a small, senior team obsessed with craft, reliability, and the future of autonomous engineering.
+          </p>
+        </div>
+        <div className="relative">
+          <div className="relative overflow-hidden rounded-3xl border border-border bg-card p-10 shadow-elevated md:p-14">
+            <div className="absolute inset-0 gradient-hero opacity-70" />
+            <div className="absolute -right-16 -top-16 h-56 w-56 rounded-full gradient-brand opacity-10 blur-3xl" />
+            <div className="relative">
+              <span className="font-mono text-xs uppercase tracking-widest text-muted-foreground">Our Slogan</span>
+              <p className="mt-6 text-4xl font-semibold leading-tight tracking-tight md:text-5xl">
+                <span className="text-brand-gradient">Engineering intelligence,</span>
+                <br />
+                infinite possibilities.
+              </p>
+              <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+                <span className="text-foreground font-medium">Ananta</span> means <em>infinite</em> — a reminder that engineering, when paired with intelligence, has no ceiling.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -436,13 +467,12 @@ const Index = () => (
     <Nav />
     <main>
       <Hero />
-      <Trust />
       <Products />
       <Solutions />
       <Why />
-      <HowItWorks />
       <Roadmap />
       <About />
+      <Trust />
       <CTA />
     </main>
     <Footer />
