@@ -5,14 +5,11 @@ import {
   GitBranch,
   Cloud,
   Layers,
-  Zap,
-  Search,
   Github,
   Linkedin,
   Mail,
   Check,
   X,
-  Plug,
   Brain,
   Workflow,
   TrendingUp,
@@ -245,36 +242,6 @@ const Why = () => (
             </ul>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-);
-
-const steps = [
-  { icon: Plug, title: "Connect", desc: "Connect your engineering stack — Slack, GitHub, Kubernetes, monitoring, cloud providers." },
-  { icon: Brain, title: "Understand", desc: "AI indexes infrastructure, logs, tickets, chats, and documentation into one graph." },
-  { icon: Search, title: "Investigate", desc: "Ask questions naturally. Get grounded answers with evidence from your systems." },
-  { icon: Zap, title: "Improve", desc: "Automate repetitive engineering work and close the loop on incidents." },
-];
-
-const HowItWorks = () => (
-  <section className="border-t border-border bg-muted/20 py-24 lg:py-32">
-    <div className="container">
-      <div className="mx-auto max-w-2xl text-center">
-        <p className="text-sm font-medium text-primary">How it works</p>
-        <h2 className="mt-3 text-4xl font-semibold tracking-tight md:text-5xl">From noise to intelligence</h2>
-      </div>
-      <div className="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-        {steps.map((s, i) => (
-          <div key={s.title} className="relative rounded-2xl border border-border bg-card p-6">
-            <span className="font-mono text-xs text-muted-foreground">0{i + 1}</span>
-            <div className="mt-4 flex h-11 w-11 items-center justify-center rounded-xl gradient-brand shadow-glow">
-              <s.icon className="h-5 w-5 text-white" />
-            </div>
-            <h3 className="mt-4 text-lg font-semibold">{s.title}</h3>
-            <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{s.desc}</p>
-          </div>
-        ))}
       </div>
     </div>
   </section>
