@@ -1,5 +1,5 @@
-import { useCallback, useState } from "react";
-import { motion, useMotionValue, useMotionTemplate, useSpring } from "framer-motion";
+import { useState } from "react";
+import { CursorSpotlight } from "@/components/landing/CursorSpotlight";
 import {
   ArrowRight,
   Sparkles,
@@ -20,28 +20,10 @@ import { Nav } from "@/components/landing/Nav";
 import { DashboardMock } from "@/components/landing/DashboardMock";
 import { Logo } from "@/components/Logo";
 
-const Hero = () => {
-  const mouseX = useMotionValue(0);
-  const mouseY = useMotionValue(0);
-  const springX = useSpring(mouseX, { stiffness: 80, damping: 20 });
-  const springY = useSpring(mouseY, { stiffness: 80, damping: 20 });
-  const spotlightBg = useMotionTemplate`radial-gradient(700px circle at ${springX}px ${springY}px, rgba(var(--spotlight-rgb), 0.13), transparent 70%)`;
-
-  const handleMouseMove = useCallback((e: React.MouseEvent<HTMLElement>) => {
-    const { left, top } = e.currentTarget.getBoundingClientRect();
-    mouseX.set(e.clientX - left);
-    mouseY.set(e.clientY - top);
-  }, [mouseX, mouseY]);
-
-  return (
-  <section className="relative overflow-hidden pt-32 pb-20 lg:pt-40 lg:pb-32" onMouseMove={handleMouseMove}>
+const Hero = () => (
+  <section className="relative overflow-hidden pt-32 pb-20 lg:pt-40 lg:pb-32">
     <div className="absolute inset-0 grid-pattern" />
     <div className="absolute inset-0 gradient-hero" />
-    {/* Cursor-following spotlight — desktop only */}
-    <motion.div
-      className="pointer-events-none absolute inset-0 z-0 hidden md:block"
-      style={{ background: spotlightBg }}
-    />
     <div className="container relative">
       <div className="grid gap-12 lg:grid-cols-2 lg:items-center lg:gap-16">
         <div className="animate-fade-up">
@@ -80,8 +62,7 @@ const Hero = () => {
       </div>
     </div>
   </section>
-  );
-};
+);
 
 const stack = [
   "Kubernetes","Docker","Go","Rust","Python","Terraform",
@@ -451,6 +432,7 @@ const Footer = () => (
 
 const Index = () => (
   <div className="min-h-screen bg-background">
+    <CursorSpotlight />
     <Nav />
     <main>
       <Hero />
