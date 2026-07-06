@@ -432,6 +432,16 @@ const Footer = () => (
 
 const Index = () => (
   <div className="min-h-screen bg-background">
+    {/* Background watermark — decorative, behind everything */}
+    <div className="pointer-events-none fixed inset-0 z-0 flex items-center justify-center overflow-hidden">
+      <img
+        src="/anantaops-logo.png"
+        alt=""
+        width={900}
+        height={900}
+        className="opacity-10 dark:brightness-0 dark:invert"
+      />
+    </div>
     <CursorSpotlight />
     <Nav />
     <main>
