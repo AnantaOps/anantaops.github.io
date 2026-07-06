@@ -71,7 +71,7 @@ const stack = [
 ];
 
 const Trust = () => (
-  <section id="technologies" className="border-t border-border bg-muted/20 py-24 lg:py-32">
+  <section id="technologies" className="bg-muted/20 py-24 lg:py-32">
     <div className="container">
       <div className="mx-auto max-w-2xl text-center">
         <p className="text-sm font-medium text-primary">Technologies</p>
@@ -189,7 +189,7 @@ const solutions = [
 ];
 
 const Solutions = () => (
-  <section id="solutions" className="border-t border-border bg-muted/20 py-24 lg:py-32">
+  <section id="solutions" className="bg-muted/20 py-24 lg:py-32">
     <div className="container">
       <div className="mx-auto max-w-2xl text-center">
         <p className="text-sm font-medium text-primary">Solutions</p>
@@ -294,7 +294,7 @@ const Roadmap = () => (
 );
 
 const About = () => (
-  <section id="about" className="border-t border-border bg-muted/20 py-24 lg:py-32">
+  <section id="about" className="bg-muted/20 py-24 lg:py-32">
     <div className="container">
       <div className="grid gap-12 lg:grid-cols-2 lg:items-center lg:gap-16">
         <div>
@@ -351,7 +351,7 @@ const CTA = () => {
     } catch { setStatus("error"); }
   };
   return (
-    <section id="contact" className="relative overflow-hidden py-24 lg:py-32">
+    <section id="contact" className="relative overflow-hidden border-t border-border py-24 lg:py-32">
       <div className="absolute inset-0 gradient-hero" />
       <div className="container relative">
         <div className="mx-auto max-w-4xl rounded-3xl border border-border bg-card p-8 shadow-elevated md:p-14">
