@@ -32,7 +32,7 @@ const Hero = () => (
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75" />
               <span className="relative inline-flex h-2 w-2 rounded-full bg-primary" />
             </span>
-            <span className="font-medium text-muted-foreground">AI-Native Engineering Company</span>
+            <span className="font-medium text-muted-foreground">Engineering, Done Right</span>
           </div>
           <h1 className="mt-6 text-5xl font-semibold leading-[1.05] tracking-tight md:text-6xl lg:text-7xl">
             Engineering <span className="text-brand-gradient">Intelligence</span>
@@ -40,7 +40,7 @@ const Hero = () => (
             for Modern Software Teams
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
-            AnantaOps builds AI-powered engineering products that help teams automate infrastructure, deploy confidently, investigate incidents faster, and scale cloud-native applications with ease.
+            AnantaOps builds engineering products that help teams automate infrastructure, deploy confidently, investigate incidents faster, and scale cloud-native applications with ease.
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <Button variant="hero" size="lg" asChild>
@@ -79,7 +79,7 @@ const Trust = () => (
           The stack we <span className="text-brand-gradient">build on</span>
         </h2>
         <p className="mt-4 text-lg text-muted-foreground">
-          Modern, cloud-native, and AI-first — the tools we use to ship reliable engineering platforms.
+          Modern, cloud-native, and built to last — the tools we use to ship reliable engineering platforms.
         </p>
       </div>
       <div className="mt-14 grid grid-cols-3 gap-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-9">
@@ -117,7 +117,7 @@ const Products = () => (
         <h2 className="mt-3 text-4xl font-semibold tracking-tight md:text-5xl">
           Building the future of <span className="text-brand-gradient">engineering operations</span>
         </h2>
-        <p className="mt-4 text-lg text-muted-foreground">A growing ecosystem of AI-powered platforms for modern engineering teams.</p>
+        <p className="mt-4 text-lg text-muted-foreground">A growing ecosystem of engineering platforms for modern engineering teams.</p>
       </div>
 
       <div className="relative mt-16 overflow-hidden rounded-2xl border border-border bg-card shadow-elevated">
@@ -213,7 +213,7 @@ const Solutions = () => (
 );
 
 const traditional = ["Multiple dashboards","Manual debugging","Context switching","Alert fatigue","Slow incident response"];
-const withAnanta = ["AI understands your systems","Natural language investigations","Connected engineering knowledge","Automated workflows","Faster incident resolution"];
+const withAnanta = ["One system that actually understands your stack","Natural language investigations","Connected engineering knowledge","Automated workflows","Faster incident resolution"];
 
 const Why = () => (
   <section id="why" className="py-24 lg:py-32">
@@ -222,7 +222,7 @@ const Why = () => (
         <p className="text-sm font-medium text-primary">Why AnantaOps</p>
         <h2 className="mt-3 text-4xl font-semibold tracking-tight md:text-5xl">One intelligent layer for the engineering stack</h2>
         <p className="mt-4 text-lg text-muted-foreground">
-          Modern engineering teams juggle too many disconnected tools. AnantaOps unifies them with AI so engineers can ask questions naturally and act with confidence.
+          Modern engineering teams juggle too many disconnected tools. AnantaOps unifies them so engineers get straight answers and act with confidence.
         </p>
       </div>
       <div className="mt-16 grid gap-6 md:grid-cols-2">
@@ -303,7 +303,7 @@ const About = () => (
             Software engineering, made <span className="text-brand-gradient">intelligent</span>
           </h2>
           <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-            AnantaOps is an AI-native engineering company building the tools and platforms that modern software teams need to move faster with confidence. We combine deep cloud-native expertise with applied AI to remove operational friction from the way engineers work.
+            AnantaOps is an engineering company obsessed with getting things right — building the tools and platforms that modern software teams need to move faster with confidence. We combine deep cloud-native expertise with careful execution, using whatever's actually the right tool for the job — AI included — to remove operational friction from the way engineers work.
           </p>
           <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
             Our products investigate incidents, reason across systems, and automate the repetitive work that slows teams down — while our engineering services help organizations architect, ship, and scale production platforms.
@@ -403,7 +403,7 @@ const Footer = () => (
         <div className="lg:col-span-2">
           <Logo />
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-muted-foreground">
-            Engineering intelligence, infinite possibilities. Building AI-native engineering platforms for modern teams.
+            Engineering intelligence, infinite possibilities. Building engineering platforms that just work.
           </p>
           <div className="mt-6 flex items-center gap-3">
             <a href="https://github.com/AnantaOps" target="_blank" rel="noopener noreferrer" className="flex h-9 w-9 items-center justify-center rounded-lg border border-border text-muted-foreground transition-colors hover:border-primary hover:text-foreground">
