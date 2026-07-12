@@ -148,7 +148,7 @@ const Products = () => (
             <div className="mt-8 flex gap-3">
               <Button variant="hero" asChild>
                 <a
-                  href="mailto:ops.is.ananta@gmail.com?subject=InsightOps%20Beta%20Access%20Request&body=Hi%20AnantaOps%20team%2C%0A%0AI'd%20like%20to%20request%20beta%20access%20to%20InsightOps.%0A%0AName%3A%0ACompany%3A%0AWork%20email%3A%0AWhat%20do%20you%20want%20to%20use%20it%20for%3F%0A"
+                  href="mailto:insights.ops@anantaops.com?subject=InsightOps%20Beta%20Access%20Request&body=Hi%20AnantaOps%20team%2C%0A%0AI'd%20like%20to%20request%20beta%20access%20to%20InsightOps.%0A%0AName%3A%0ACompany%3A%0AWork%20email%3A%0AWhat%20do%20you%20want%20to%20use%20it%20for%3F%0A"
                 >
                   Join Beta <ArrowRight className="h-4 w-4" />
                 </a>
